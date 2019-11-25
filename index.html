@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <h1 class="text-center m-5 text-dark">My To Do List</h1>
+            <div class="bg-danger text-white my-5 d-flex justify-content-between align-items-center rounded">
+                <p id="msg" class="m-0"></p>
+                <button class="btn btn-dark mx-3 d-none" id="close-btn">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+            </div>
+            <form>
+                <div class="d-flex">
+                    <div class="form-group flex-grow-1">
+                        <input type="text" class="form-control" id="InputTodo" placeholder="Enter Text" autofocus />
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary add-list ml-1">
+                            Add
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <div id="list"></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
